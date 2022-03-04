@@ -1,0 +1,22 @@
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: "Segoe UI Semibold", Arial, Helvetica, sans-serif;
+}
+
+figure {
+    width: 30%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}

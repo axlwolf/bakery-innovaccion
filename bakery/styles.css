@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/* ROOT FONT STYLES */
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-image: url(./assets/images/bakeribbon.png);
+}
+
+main {
+    height: 100% - 60px;
+}
+
+.logo {
+    text-align: center;
+    padding: 1em;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.ribbon {
+    background: #EBB668;
+    color: white;
+    text-align: center;
+}
+
+.products .products-images p {
+  text-align: center;
+}
+
+.products .products-images p + p,
+.preview-order figure p + p {
+  font-weight: bold;
+}
+
+.products .products-images img {
+  padding: 4px;
+}
+
+.products .products-images figure,
+.preview-order figure {
+  width: 90%;
+  margin: 16px auto 0;
+}
+
+.preview-order figure {
+  width: 90%;
+  padding: 1em;
+}
+
+.preview-order figcaption {
+  padding: 1em;
+}
+
+.preview-order figcaption p.product-name,
+.preview-order figcaption p.product-price {
+    text-align: center;
+}
+
+.preview-order figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+.products .products-images figure:hover,
+.preview-order figure:hover {
+  -webkit-box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 20%);
+  z-index: 10;
+}

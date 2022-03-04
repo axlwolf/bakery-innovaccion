@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - El Macho Taco</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>
+        Aqui se hace el pedido.
+    </h1>
+    <form action="./pedido.js">
+        <label for="nombre">Nombre del cliente</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <br>
+        <br>
+        <label for="mesa">Numero de mesa</label><br>
+        <input type="number" name="mesa" id="mesa" placeholder="0">
+        <br><br>
+        <p>Para comer aqui o para llevar</p>
+        <input type="radio" name="aquiollevar" id="aqui" value="Aqui">
+        <label for="aqui">Comer Aqui</label>
+        <br>
+        <input type="radio" name="aquiollevar" id="llevar" value="Llevar">
+        <label for="llevar">Para llevar</label>
+    </form>
+</body>
+</html>
