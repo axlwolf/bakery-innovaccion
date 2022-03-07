@@ -16,7 +16,9 @@
             <div class="col-3-12">
                 <!-- This content will take up 3/12 (or 1/4) of the container -->
                 <section class="logo">
-                    <img src="./assets/logos/panfresquito.png" alt="">
+                    <a href="./index.html">
+                        <img src="./assets/logos/panfresquito.png" alt="">
+                    </a>
                 </section>
             </div>
               <div class="col-9-12">
@@ -34,8 +36,68 @@
     </header>
             
     <main>
-        <section class="delivery-form">
-            
+        <section class="grid delivery-form">
+            <!-- <form action="./pedido.js"> -->
+            <form>
+                <label for="nombre">Nombre del cliente</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <br>
+                <br>
+                <label for="mesa">Numero telefonico</label><br>
+                <input type="number" name="telefono" id="telefono" placeholder="0000-0000">
+                <br><br>
+                <label for="mesa">Correo electronico</label><br>
+                <input type="email" name="email" id="email" placeholder="jhon.doe@mail.com">
+                <br>
+                <br>
+                <label for="" class="delivery-resume">Resumen del pedido</label>
+                <div class="col-1-1">
+                    <div class="grid">
+                        <div class="col-1-4">
+                            <h2>
+                                Producto
+                            </h2>
+                            <p class="product-name">
+                                Pastel Base Chocolate
+                            </p>
+                        </div>
+                        <div class="col-1-4">
+                            <h2>
+                                Precio base
+                            </h2>
+                            <p class="prudct-price">
+                                $270.00
+                            </p>
+                        </div>
+                        <div class="col-1-4">
+                            <h2>
+                                Adornos
+                            </h2>
+                            <p class="adornos">Fresas ---- $50.00</p>
+                            <p class="adornos">Fresas ---- $50.00</p>
+                            <p class="adornos">Fresas ---- $50.00</p>
+                            <p class="adornos">Fresas ---- $50.00</p>
+                        </div>
+                        <div class="col-1-4">
+                            <h2>
+                                Total
+                            </h2>
+                            <p>
+                                $470.00 MXN
+                            </p>
+                        </div>
+                        <div class="col-1-1">
+                            <div class="process-deliveri">
+                                <a href="./envio.html">
+                                    <button>
+                                        Procesar envio
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
     <!-- <footer></footer> -->

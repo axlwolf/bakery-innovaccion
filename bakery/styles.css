@@ -66,14 +66,16 @@ html {
 
 footer {
     position: absolute;
+    display: block;
     bottom: 0;
     width: 100%;
     height: 60px;
+    margin-top: 1em;
     background-image: url(./assets/images/bakeribbon.png);
 }
 
 main {
-    height: 100% - 60px;
+    height: 100% - 76px;
 }
 
 .logo {
