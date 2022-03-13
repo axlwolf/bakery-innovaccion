@@ -1,3 +1,6 @@
+/*
+    Fonts families
+*/
 @import url('http://fonts.cdnfonts.com/css/montserrat');
 
 @font-face {
@@ -18,32 +21,41 @@
     font-display: swap;
 }
 
+/*
+    Global Styles
+*/
+
 :root {
     --white: #FFFFFF;
     --black: #000000;
     --font-family-titles: "Montserrat", Helvetica, Arial, sans-serif;
     --font-family-content: "Urbanist", Helvetica, Arial, sans-serif;
+    --titles-blue:  #1f3e72;
     --primary-blue: #2A4AC8;
+    --base-blue: #2A4AC8;
     --secondary-blue: #2A4AC8;
     --third-blue: #148AE2;
     --fourth-blue: #3269D9;
-    --gray-typo: #E7F5FB;
+    --gray-typo: #6F7C92;
+    --gray-decorations: #E7F5FB;
     --icons-yellow: #FFD038;
     --gray-navbar: #E7F5FB;
     --gray-fotter: #EEF3FF;
+    /**/
+    --nav-box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5)
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    }
+}
 
 * {
     font-family: var(--font-family-titles);
-    color: #333447;
-    line-height: 1.5;
+    color: var(--gray-typo);
     box-sizing: border-box;
+    font-size: 100%;
 }
 
 html {
@@ -53,9 +65,343 @@ html {
 
 h1, h2, h3, h4 {
     font-family: var(--font-family-titles);
-    color: #193C73;
+    color: var(--base-blue);
+    font-weight: 800;
+}
+
+h1 {
     font-size: 3.5em;
-    font-weight:800;
-    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    font-stretch:semi-expanded;
     word-spacing: 2px;
+    line-height: 2;
+}
+
+i {
+    margin-right: 12px;
+}
+
+a {
+    text-decoration: none;
+    font-stretch:semi-expanded;
+    letter-spacing: 0.5px;
+}
+
+/*
+    Navbar Styles
+*/
+/*Style Navigation bar*/
+.nav-bar {
+    width: 100%;
+    padding: 2.5em 3em 2.5em 6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(231,244,252,1) 50%);
+}
+
+.nav-bar .logo {
+    font-family: var(--font-family-titles);
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-bar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar .nav-item a {
+    display: inline-block;
+    padding: 1em 2em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.nav-bar .nav-item:hover,
+.nav-bar .nav-item.active-link {
+    background-color: var(--primary-blue);
+    border-radius: 5px;
+    box-shadow: var(--nav-box-shadow);
+}
+
+.nav-bar .nav-item.active-link a {
+    color: var(--white);
+}
+
+.nav-bar .nav-item:hover a {
+    color: var(--white);
+}
+
+
+/*
+    Main container
+*/
+
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Style Fight Virus with vaccines and nurse image*/
+
+/* created a container for two sections*/
+.container-fight-virus {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.subcon-fight-virus {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.subcon-fight-virus h1, .subcon-fight-virus p{
+    margin-left: 10%;
+    width: 60%;
+}
+
+.subcon-fight-virus p {
+    font-weight: bold;
+}
+
+.subcon-fight-virus h2 {
+    margin-top: 10%;
+    font-size: 3em;
+    padding-left: 1em;
+    color: var(--titles-blue);
+    word-spacing: 0;
+}
+
+.subconFightVirus p{
+    margin-top: 4%;
+    
+}
+
+.subconNurseImage{
+    width: 50%;
+    display: flex;
+    height: 800px;
+    background: #0056c5;
+    /* background: linear-gradient(90deg, rgba(20,138,226,1) 37%, rgba(50,105,217,1) 70%); */
+}
+
+.subconNurseImage img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.twoFacts{
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconYellow {
+    color: #FFD10A;
+    background-color: #FFF2BD;
+    padding: 3px;
+}
+
+span{
+    color: #193C73;
+}
+
+form{
+    margin-left: 5%;
+    width: 76%;
+    position: absolute;
+    bottom: 1.5em;
+    left: -29px;
+    box-shadow: 2px 3px 15px -2px rgb(20 60 115 / 50%);
+}
+
+.schedule-vaccine{
+    border-style: none;
+    color: #193C73;
+    font-weight: bold;    
+    background: rgba(255,255,255,0.9);
+}
+
+.scheduledetails{
+    border-style: none;
+    border-radius: 4px;
+    padding: 2.5em 2em;
+}
+
+.scheduledetails label{
+    color:#6D7C94;
+    font-weight: normal;
+}
+.scheduledetails i{
+    color: #193C73;
+    
+}
+
+.iconBlueMain {
+    background-color: #EBF1FE;
+    padding: 3px;
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+.iconBlueSecondary{
+    background-color: #EBF1FE;
+    padding: 3px;
+}
+
+input[name="location"] {
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #193C73;
+    padding: 1%;
+    width: 100%;
+}
+
+input[name=appointmentDate]{
+    color: #193C73;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    padding: 1%;
+    width: 100%;
+}
+
+select[name=vaccineType]{
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #193C73;
+    padding: 1%;
+    width: 100%;
+}
+
+input[type=submit]{
+    padding: 9%;
+    font-weight: bold;
+    font-stretch:semi-expanded;
+    background-color: #2549C9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    width: 90%;
+    margin-left: 10%;
+    
+}
+
+input[type=submit]:hover{
+    box-shadow: 2px 3px 15px -2px rgba(20,60,115,0.5);
+}
+
+.locationsBox, .appointmentBox, .vaccineBox, .submitBox{
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width:25%;
+    padding: 2px;
+}
+
+
+
+/* Footer */
+
+.footer {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    background-color: var(--gray-fotter);
+}
+
+.footer-top-left {
+    width: 50%;
+    max-height: 80%;
+    margin-top: 3%;
+}
+
+.footer-text {
+    margin-left: 10%;
+    width: 30%;
+}
+
+.footer-top-right {
+    width: 50%;
+    max-height: 80%;
+    margin-top: 3%;
+}
+
+.footer-content {
+    width: 33%;
+    float: left;
+    line-height: 2;
+}
+
+.footer-content span {
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-bottom-left {
+    width: 50%;
+    max-height: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.footer-bottom-left p {
+    margin-left: 10%;
+}
+
+.footer-bottom-right {
+    width: 50%;
+    max-height: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    
+}
+.footer-bottom-right a {
+    margin-left: 5%;
+}
+
+.footer-tc{
+    display: flex;
+    justify-content: end;
+    margin-right: 15%;
 }
